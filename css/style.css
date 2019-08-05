@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+	margin: 0;
+}
+
+html {
+	height: 100%;
+}
+
+body{
+	height: 100%;
+	min-height: 100%;
+
+	display: grid;
+	grid-template-columns: minmax(420px, 35%) minmax(780px, auto);
+}
+
+.panel{
+	display: grid;
+
+	min-width: 420px;
+	grid-template-rows: auto 1fr 1fr auto;
+
+	background-color: #5CDB95;
+}
+
+header{
+	font-family: 'Skranji', sans-serif;
+    color: #05386b;
+	font-size: 55px;
+	padding: 0 0.2em;
+	margin: 0.5em 0.5em;
+
+	border: solid #379683 10px;
+}
+
+footer{
+	font-family: 'Skranji', sans-serif;
+	padding: 0 0.2em;
+	margin: 0.5em 0.5em;
+}
+
+button{
+	font-family: 'Righteous', sans-serif;
+	font-size: 18px;
+	padding: 5px;
+	margin: 5px;
+	width: 100px;
+
+	border: 0;
+	border-radius: 5px;
+	background-color: #05386b;
+	color: #EDF5E1;
+	transition: all 0.2s;
+}
+
+button:hover{
+    transform: scale(1.05);
+}
+
+.grid-info{
+	background-color: #EDF5E1;
+	border: #379683 2px dotted;
+	padding: 0.5em;
+
+	color: #05386b;
+	font-family: 'Righteous', sans-serif;
+
+	max-height: 130px;
+}
+
+.shadow{
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.num-input{
+	background-color: #EDF5E1;
+	width: 150px;
+	border: none;
+	text-align: right;
+
+	float: right;
+}
+
+.center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.center-all {
+	display: block;
+	margin: auto;
+}
+
+.sketchboard{
+	margin: 0;
+	transition: all 0.5s; 
+	display: grid;
+}
+
+.sketchboard:hover{
+	transform: scale(1.01);
+}
+
+#input-color{
+	background-color: #EDF5E1;
+	border: 0;
+	padding: 0;
+}
+
+.color-picking{
+	background-color: #EDF5E1;
+	border: #379683 2px dotted;
+	padding: 0.5em;
+
+	color: #05386b;
+	font-family: 'Righteous', sans-serif;
+
+	max-height: 120px;
+}
+
+.dotted-border{
+	border: #379683 1px dotted;
+
+	padding: 0.25em;
+	margin: 0.1em;
+}
+
+.game-area{
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.cell{
+	padding: 1px;
+	transition: all 1s; 
+	border: solid 1px #05386b;
+	background-color: #EDF5E1;
+}
+
+.cell:hover{
+	transform: scale(1.1);
+	border: solid 1px #EDF5E1;
+}
