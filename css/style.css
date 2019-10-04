@@ -6,6 +6,11 @@ html, body {
 	margin: 0;
 }
 
+.container {
+	display: flex;
+	flex-direction: column;
+}
+
 html {
 	height: 100%;
 }
@@ -22,7 +27,7 @@ body{
 	display: grid;
 
 	min-width: 420px;
-	grid-template-rows: auto 1fr 1fr auto;
+	grid-template-rows: auto 2fr auto;
 
 	background-color: #5CDB95;
 }
@@ -92,7 +97,6 @@ button:hover{
 }
 
 .center-all {
-	display: block;
 	margin: auto;
 }
 
